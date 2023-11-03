@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./src/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.line{
+    height: 1px;
+    background-color: #f3f3f3;
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    /* border: 1px solid #333333; */
+    border-radius: 5%;
+    background-color: rgba(10, 10, 10, 0.7);
+    color: #f3f3f3;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.email, .password{
+    background-color: rgba(10, 10, 10, 0.7);
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    color: #ffffff;
+    padding: 0 10px;
+}
+.email:focus-visible, .password:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.sign{
+    margin: 20px 0 10px;
+    height: 40px;
+    color: white;
+    background-color: #201e1e;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign:hover{
+    background-color: #222222;
+    color: white;
+}
+
+.dnk{
+    display: flex;
+    flex-direction: column;    
+    margin: 2px 0 10px;
+}
+
+.lblPass, .lblEmail{
+    cursor: text;
+    user-select: none;
+    color: #e5e5e5;
+    margin: auto;
+    margin-left: 5px;
+    transform: translateY(25px);
+    transition: all 0.2s;
+}
+
+.lblPass.active, .lblEmail.active{
+    transform: translateY(0);
+    color: white;
+}
+
+.buttons{
+    display: flex;
+}
+
+.in{
+    width: 69%;
+    margin-right: 1%;
+    border-radius: 10px 0 0 10px;
+}
+
+.up{
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+    background-color: #2e6ade;
+    /* color: black; */
+}
+
+.up:hover{
+    background-color: #275cc5;
+}
+
+.forgot{
+    font-size: 12px;
+}
